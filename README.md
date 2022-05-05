@@ -1,4 +1,4 @@
-# Asynchronous-JavaScript
+# Async-Functions-JavaScript
 
 All about funtions on JavaScript :D
 
