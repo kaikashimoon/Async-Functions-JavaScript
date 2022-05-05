@@ -8,43 +8,37 @@ let stocks  = {
 
 let isShopOpen = Boolean = false
 
-let order = (time, work) => {
+// let order = () => {
     
-    return new Promise( (resolve, reject)=>{
-        if(isShopOpen) {
-            setTimeout(() => {
-                resolve(work())
-            }, time);
-        }
-        else{
-            reject(console.log('Our shop is close'))
-        }
-    } )
+//     return new Promise((resolve, reject)=>{
+//         if (true) {
+//             resolve()
+//         } else {
+//             reject()
+//         }
+//     })
+// }
+
+// order()
+// .then()
+// .then()
+// .then()
+// .catch()
+// .finally()
+
+
+async function order() {
+    try {
+        await abc
+    } catch (error) {
+        console.log('abcd doesnt exist')
+    }
+    finally{
+        console.log('Runs code anyways')
+    }
 }
 
-order(2000, ()=>{
-    console.log(`${stocks.fruits[1]} was selected`)
-}).then(()=>{
-    return order(0000, ()=>console.log('Production has started'))
-}).then(()=>{
-    return order(2000, ()=>console.log('The fruit has been chopped'))
-}).then(()=>{
-    return order(1000, ()=>console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} was added`))
-}).then(()=>{
-    return order(1000, ()=>console.log('Machine was started'))
-}).then(()=>{
-    return order(3000, ()=>console.log(`${stocks.holder[0]} was picked`))
-}).then(()=>{
-    return order(2000, ()=>console.log(`${stocks.toppings[0]} was added`))
-})
+order()
 .then(()=>{
-    return order(2000, ()=>console.log('serve ice cream'))
-})
-
-.catch(() =>{
-    console.log('Customer left')
-})
-
-.finally(()=>{
-    console.log('Day ended, shop is closed')
+    console.log('dfsd')
 })
